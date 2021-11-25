@@ -16,7 +16,8 @@ class Pessoa {
     var result = (peso / math.pow(altura, 2)).toStringAsPrecision(4);
     return double.parse(result);
   }
+
   bool get isMaiorIdade {
-    return idade >= 18;  //botar só o igual para dar erro propositalmente
+    return idade > 18;  
   }
 }
