@@ -12,4 +12,20 @@ void main() {
   test("A idade não pode ser nulo", () {
     expect(pessoa.idade, isNotNull);
   });
+   test("O nome deve ser João", () {
+    expect(pessoa.nome, equals('João'));
+    expect(pessoa.nome, contains('J'));
+    expect(pessoa.nome, isA<String>());
+  });
+  test("A idade não pode ser nulo", () {
+    expect(pessoa.idade, isNotEmpty);
+  });
+   test("O nome deve ser João", () {
+    expect(pessoa.nome, equals('João'));
+    expect(pessoa.nome, contains('J'));
+    expect(pessoa.nome, isA<String>());
+  });
+  test("A idade não pode ser nulo", () {
+    expect(pessoa.idade, isNotNull);
+  });
 }
